@@ -1,0 +1,102 @@
+import "@/styles/globals.css"
+
+import * as React from "react"
+import type { Metadata, Viewport } from "next"
+import { Analytics } from "@vercel/analytics/react"
+
+import { fontInter, fontJetBrainsMono } from "@/config/fonts"
+import { siteConfig } from "@/config/site"
+
+import { SmoothScrollProvider } from "@/providers/smooth-scroll-provider"
+import { ThemeProvider } from "@/providers/theme-provider"
+import { cn } from "@/lib/utils"
+
+import { Toaster } from "@/components/ui/toaster"
+import { TailwindIndicator } from "@/components/tailwind-indicator"
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  minimumScale: 1,
+  maximumScale: 1,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
+}
+
+export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL),
+  title: {
+    default: siteConfig.nameLong,
+    template: `%s - ${siteConfig.nameLong}`,
+  },
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: [
+    {
+      name: "New Vision Team",
+      url: "",
+    },
+  ],
+  creator: "New Vision Veterinary Hospital",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteConfig.url,
+    title: siteConfig.nameLong,
+    description: siteConfig.description,
+    siteName: siteConfig.nameLong,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.nameLong,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
+    creator: siteConfig.author,
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+}
+
+interface RootLayoutProps {
+  children: React.ReactNode
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<RootLayoutProps>): JSX.Element {
+  return (
+    <html lang="en">
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontInter.variable,
+          fontJetBrainsMono.variable
+        )}
+      >
+        <SmoothScrollProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+            <Toaster />
+            <Analytics />
+            <TailwindIndicator />
+          </ThemeProvider>
+        </SmoothScrollProvider>
+
+        <Toaster />
+      </body>
+    </html>
+  )
+}
+     

@@ -42,4 +42,4 @@ export function Navigation({ navItems }: NavigationProps): JSX.Element {
     </NavigationMenu>
   )
 }
-   
+    

@@ -63,4 +63,4 @@ export type GetUserByEmailVerificationTokenInput = z.infer<
 >
 
 export type CheckIfUserExistsInput = z.infer<typeof checkIfUserExistsSchema>
-        
+         

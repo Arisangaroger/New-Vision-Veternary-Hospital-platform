@@ -37,4 +37,4 @@ export const psCheckIfUserExists = db.query.users
     where: eq(users.id, sql.placeholder("id")),
   })
   .prepare("psCheckIfUserExists")
-       
+        

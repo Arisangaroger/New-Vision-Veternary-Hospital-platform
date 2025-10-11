@@ -100,4 +100,4 @@ export type AddClinicInput = z.infer<typeof addClinicSchema>
 export type CheckIfClinicExistsInput = z.infer<typeof checkIfClinicExistsSchema>
 
 export type UpdateClinicInput = z.infer<typeof updateClinicSchema>
-      
+       

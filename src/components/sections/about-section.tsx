@@ -53,4 +53,4 @@ export function AboutSection(): JSX.Element {
     </section>
   )
 }
-  
+   

@@ -71,4 +71,4 @@ export default async function AvailabilityPage(): Promise<JSX.Element> {
     </Shell>
   )
 }
-        
+         

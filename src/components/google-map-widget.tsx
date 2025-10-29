@@ -16,4 +16,4 @@ export function GoogleMapWidget(): JSX.Element {
     </div>
   )
 }
-        
+         

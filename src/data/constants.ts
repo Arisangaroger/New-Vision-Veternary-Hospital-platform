@@ -22,4 +22,4 @@ export const DAY_MAPPINGS = {
   saturday: "Saturday",
   sunday: "Sunday",
 } satisfies Record<string, string>
-   
+    

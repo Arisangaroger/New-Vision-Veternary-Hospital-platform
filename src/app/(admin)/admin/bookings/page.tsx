@@ -172,4 +172,4 @@ export default async function ClinicBookingsPage({
     </Card>
   )
 }
-        
+         

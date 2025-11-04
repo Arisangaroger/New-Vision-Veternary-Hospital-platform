@@ -32,4 +32,4 @@ export function ServiceCard({ service }: ServiceCardProps): JSX.Element {
     </Card>
   )
 }
-        
+         

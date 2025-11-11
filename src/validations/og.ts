@@ -23,4 +23,4 @@ export const ogImageSchema = z.object({
     .optional(),
   mode: z.enum(["light", "dark"]).default("dark"),
 })
-         
+          

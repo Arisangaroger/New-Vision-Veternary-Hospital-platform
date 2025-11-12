@@ -17,4 +17,4 @@ declare module "@auth/core/adapters" {
     role: Role
   }
 }
-    
+     

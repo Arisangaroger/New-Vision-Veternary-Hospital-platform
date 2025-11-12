@@ -11,4 +11,4 @@ export default function AuthLayout({ children }: AuthLayoutProps): JSX.Element {
     </div>
   )
 }
-      
+       

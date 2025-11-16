@@ -112,4 +112,4 @@ export async function checkIfUserExists(
     throw new Error("Error checking if user exists")
   }
 }
-      
+       

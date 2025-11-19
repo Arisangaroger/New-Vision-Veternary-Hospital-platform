@@ -49,4 +49,4 @@ export const updateBusinessHoursSchema = businessHoursSchema.extend({
 export type AddBusinessHoursInput = z.infer<typeof addBusinessHoursSchema>
 
 export type UpdateBusinessHoursInput = z.infer<typeof updateBusinessHoursSchema>
-      
+       

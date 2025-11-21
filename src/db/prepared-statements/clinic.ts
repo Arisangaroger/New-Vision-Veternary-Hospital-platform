@@ -23,4 +23,4 @@ export const psCheckIfClinicExists = db.query.clinics
     where: eq(clinics.id, sql.placeholder("id")),
   })
   .prepare("psCheckIfClinicExists")
-        
+         

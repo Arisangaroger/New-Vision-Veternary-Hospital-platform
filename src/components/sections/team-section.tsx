@@ -46,4 +46,4 @@ export function TeamSection(): JSX.Element {
     </section>
   )
 }
-            
+             

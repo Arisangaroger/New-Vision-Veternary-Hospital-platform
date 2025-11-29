@@ -65,4 +65,4 @@ export function MagicLinkEmail({
     </Html>
   )
 }
-    
+     

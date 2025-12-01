@@ -14,4 +14,4 @@ export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
     </ReactLenis>
   )
 }
-        
+         

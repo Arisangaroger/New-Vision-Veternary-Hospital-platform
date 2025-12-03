@@ -40,4 +40,4 @@ export default async function ClinicPage(): Promise<JSX.Element> {
     </Shell>
   )
 }
-    
+     

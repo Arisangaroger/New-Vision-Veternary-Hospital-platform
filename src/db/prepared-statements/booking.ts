@@ -33,4 +33,4 @@ export const psCheckIfBookingExists = db.query.bookings
     where: eq(bookings.id, sql.placeholder("id")),
   })
   .prepare("psCheckIfBookingExists")
-   
+    

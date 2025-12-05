@@ -9,4 +9,4 @@ export const fontJetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
-         
+          

@@ -3,4 +3,4 @@ export default function LandingLayout({
 }: React.PropsWithChildren): JSX.Element {
   return <div>{children}</div>
 }
-    
+     

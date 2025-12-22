@@ -503,4 +503,4 @@ export const getRandomPatternStyle = (seed: string) => {
     backgroundImage: bgPattern(pattern, fgColor, opacity),
   }
 }
-     
+      

@@ -133,4 +133,4 @@ export async function updateClinic(
     throw new Error("Error updating clinic data")
   }
 }
-      
+       

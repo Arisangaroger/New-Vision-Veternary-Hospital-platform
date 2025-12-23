@@ -84,4 +84,4 @@ export const services = [
       "In our clinic you can take advantage of a dietary consultation for your pet.",
   },
 ]
-      
+       

@@ -9,4 +9,4 @@ export function ThemeProvider({
 }: ThemeProviderProps): JSX.Element {
   return <NextThemesProvider {...props}>{children}</NextThemesProvider>
 }
-      
+       
